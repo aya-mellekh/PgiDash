@@ -1,0 +1,115 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="widget-container">
+
+    <div class="widget">
+      <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
+        <div class="value">
+          <button [matMenuTriggerFor]="lvl1add" mat-button>
+            <div class="add" >
+            <i class="fa fa-plus-circle" ></i>
+          </div></button>
+          <mat-menu #lvl1add="matMenu">
+            <button [matMenuTriggerFor]="Process1" mat-menu-item >Process defnition overview</button>
+            <button [matMenuTriggerFor]="Process2" mat-menu-item>Process instances overview</button>
+            <button [matMenuTriggerFor]="Process3" mat-menu-item>Task overview</button>
+          </mat-menu>
+          <mat-menu #Process1="matMenu">
+            <button mat-menu-item  (click)="openDialog()">Total process instances overview</button>
+            <button mat-menu-item>Process defnition details</button>
+
+          </mat-menu>
+          <mat-menu #Process2="matMenu">
+            <button mat-menu-item>Process steps total time</button>
+            <button mat-menu-item>Activity durations</button>
+            <button mat-menu-item>Slowest process instances</button>
+
+          </mat-menu>
+          <mat-menu #Process3="matMenu">
+            <button mat-menu-item>Task counts</button>
+            <button mat-menu-item>Detailed task statistics</button>
+            <button mat-menu-item>Task counts by assignee</button>
+            <button mat-menu-item>Number of tasks divided by date interval</button>
+
+          </mat-menu>
+            <!-- <div class="add" >
+              <i class="fa fa-plus-circle" ></i>
+
+
+            </div> -->
+
+
+
+        </div>
+
+    </div>
+    <div class="widget">
+
+        <div class="value">
+
+            <button [matMenuTriggerFor]="lvl1add" mat-button><div class="add">
+              <i class="fa fa-plus-circle"></i>
+            </div></button>
+            <mat-menu #lvl1add="matMenu">
+              <button [matMenuTriggerFor]="Process1" mat-menu-item >Process defnition overview</button>
+              <button [matMenuTriggerFor]="Process2" mat-menu-item>Process instances overview</button>
+              <button [matMenuTriggerFor]="Process3" mat-menu-item>Task overview</button>
+            </mat-menu>
+            <mat-menu #Process1="matMenu">
+              <button mat-menu-item>Total process instances overview</button>
+              <button mat-menu-item>Process defnition details</button>
+
+            </mat-menu>
+            <mat-menu #Process2="matMenu">
+              <button mat-menu-item>Process steps total time</button>
+              <button mat-menu-item>Activity durations</button>
+              <button mat-menu-item>Slowest process instances</button>
+
+            </mat-menu>
+            <mat-menu #Process3="matMenu">
+              <button mat-menu-item>Task counts</button>
+              <button mat-menu-item>Detailed task statistics</button>
+              <button mat-menu-item>Task counts by assignee</button>
+              <button mat-menu-item>Number of tasks divided by date interval</button>
+
+            </mat-menu>
+
+        </div>
+
+    </div>
+    <div class="widget">
+
+      <div class="value">
+
+          <button [matMenuTriggerFor]="lvl1add" mat-button><div class="add">
+            <i class="fa fa-plus-circle"></i>
+          </div></button>
+          <mat-menu #lvl1add="matMenu">
+            <button [matMenuTriggerFor]="Process1" mat-menu-item >Process defnition overview</button>
+            <button [matMenuTriggerFor]="Process2" mat-menu-item>Process instances overview</button>
+            <button [matMenuTriggerFor]="Process3" mat-menu-item>Task overview</button>
+          </mat-menu>
+          <mat-menu #Process1="matMenu">
+            <button mat-menu-item>Total process instances overview</button>
+            <button mat-menu-item>Process defnition details</button>
+
+          </mat-menu>
+          <mat-menu #Process2="matMenu">
+            <button mat-menu-item>Process steps total time</button>
+            <button mat-menu-item>Activity durations</button>
+            <button mat-menu-item>Slowest process instances</button>
+
+          </mat-menu>
+          <mat-menu #Process3="matMenu">
+            <button mat-menu-item>Task counts</button>
+            <button mat-menu-item>Detailed task statistics</button>
+            <button mat-menu-item>Task counts by assignee</button>
+            <button mat-menu-item>Number of tasks divided by date interval</button>
+
+          </mat-menu>
+
+      </div>
+
+  </div>
+
+</div>

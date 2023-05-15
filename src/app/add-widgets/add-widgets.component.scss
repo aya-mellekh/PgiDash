@@ -1,0 +1,76 @@
+.widget-container {
+  display: flex;
+  align-items: space-between;
+  .widget {
+    width: 440px;
+    height: 175px;
+    background-color: #fff;
+    color: #0c0101;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #939393;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    &.green {
+      background-color: rgb(4, 67, 66);
+    }
+    &.yellow {
+      background-color: rgb(237, 158, 32);
+    }
+    &.red {
+      background-color: rgb(126, 5, 5);
+    }
+    &.blue {
+      background-color: rgb(105, 32, 251);
+    }
+    @media only screen and (max-width: 1600px) {
+      width: 300px;
+    }
+    @media only screen and (max-width: 1500px) {
+      width: 275px;
+    }
+    @media only screen and (max-width: 1400px) {
+      width: 250px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 225px;
+    }
+
+
+    .delete{
+
+
+
+
+    padding: 12px;
+    right: 0;
+    top: 0;
+    width: 16px;
+
+
+
+
+        }
+
+
+    .value {
+      text-align: center;
+      width: 175px;
+
+      .add{
+        font-size:75px;
+        color:rgb(128, 119, 119);
+        align-items: center;
+        text-align: center;
+
+      }
+
+
+    }
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

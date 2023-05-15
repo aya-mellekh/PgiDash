@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<form class="form" [formGroup]="myForm" (ngSubmit)="print()">
+  <h3>Total process instances overview</h3>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Process status</label>
+    <br>
+    <br>
+    <select class="form-control" formControlName="process_S" >
+      <option>All</option>
+      <option>Active</option>
+      <option>Complete</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Chart type</label>
+    <br>
+    <br>
+    <select class="form-control"  formControlName="chart_type" placeholder="choose one" >
+      <option>Pie</option>
+      <option>Line</option>
+      <option>Table</option>
+      <option>Bar vertical</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <div class="fixed-bottom">
+  <button type="Reset" value="Reset">Cancel</button>
+  <button type="submit" value="submit">Create</button>
+</div>
+  </form>
+
+
