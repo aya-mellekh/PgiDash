@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MasterService } from './master.service';
+import { ElasticsearchService } from './elasticsearch.service';
 
-describe('MasterService', () => {
-  let service: MasterService;
+describe('ElasticsearchService', () => {
+  let service: ElasticsearchService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MasterService);
+    service = TestBed.inject(ElasticsearchService);
   });
 
   it('should be created', () => {
