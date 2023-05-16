@@ -16,7 +16,7 @@
           </mat-menu>
           <mat-menu #Process1="matMenu">
             <button mat-menu-item  (click)="openDialog()">Total process instances overview</button>
-            <button mat-menu-item>Process defnition details</button>
+            <button mat-menu-item  (click)="openDialog()">Process defnition details</button>
 
           </mat-menu>
           <mat-menu #Process2="matMenu">
@@ -56,8 +56,8 @@
               <button [matMenuTriggerFor]="Process3" mat-menu-item>Task overview</button>
             </mat-menu>
             <mat-menu #Process1="matMenu">
-              <button mat-menu-item>Total process instances overview</button>
-              <button mat-menu-item>Process defnition details</button>
+              <button mat-menu-item (click)="openDialog()">Total process instances overview</button>
+              <button mat-menu-item (click)="openDialog()">Process defnition details</button>
 
             </mat-menu>
             <mat-menu #Process2="matMenu">
@@ -90,8 +90,8 @@
             <button [matMenuTriggerFor]="Process3" mat-menu-item>Task overview</button>
           </mat-menu>
           <mat-menu #Process1="matMenu">
-            <button mat-menu-item>Total process instances overview</button>
-            <button mat-menu-item>Process defnition details</button>
+            <button mat-menu-item (click)="openDialog()">Total process instances overview</button>
+            <button mat-menu-item (click)="openDialog()">Process defnition details</button>
 
           </mat-menu>
           <mat-menu #Process2="matMenu">
